@@ -1,0 +1,117 @@
+/*VARIABLES CSS (Custom Properties)*/
+:root {
+    --color-primario: #927dc1;
+    --color-secundario: #4cc9f0;
+    --color-fondo: #f8f9fa;
+    --color-texto: #2b2d42;
+    --color-borde: #e9ecef;
+    --color-error: #e63946;
+}
+
+/*RESET BÁSICO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS GENERALES*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.contenedor-conversor {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 26px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #6c757d;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*GRUPOS DE FORMULARIO*/
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: var(--color-secundario);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+
+input[readonly] {
+    background-color: #f1f3f5;
+    cursor: not-allowed;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*BOTONES DE OPERACIÓN*/
+.grupo-botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.boton-operacion {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-operacion:hover {
+    background-color: #6f5aa3;
+}

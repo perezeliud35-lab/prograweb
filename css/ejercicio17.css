@@ -1,0 +1,137 @@
+:root {
+    --color-primario: #927dc1;
+    --color-secundario: #4cc9f0;
+    --color-fondo: #f8f9fa;
+    --color-texto: #2b2d42;
+    --color-borde: #e9ecef;
+    --color-error: #e63946;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.contenedor-conversor {
+    max-width: 450px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 26px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #6c757d;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.grupo-agregar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.grupo-agregar input {
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: var(--color-secundario);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+
+
+.boton-convertir {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.boton-convertir:hover {
+    background-color: #6f5aa3;
+}
+
+
+.lista-tareas {
+    list-style: none;
+}
+
+.tarea-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.boton-eliminar {
+    background-color: var(--color-error);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-eliminar:hover {
+    background-color: #c1121f;
+}
+
+
+.mensaje-vacio {
+    text-align: center;
+    color: #adb5bd;
+    font-size: 14px;
+    display: none;
+}

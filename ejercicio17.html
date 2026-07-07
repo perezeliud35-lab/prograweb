@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Gestión de Tareas Pendientes</title>
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Gestión de Tareas</h1>
+        <p class="subtitulo">Se guardan en Local Storage como JSON</p>
+
+        <div class="grupo-agregar">
+            <input type="text" id="inputTarea" placeholder="Ej: Estudiar JavaScript">
+            <button type="button" id="btnAgregar" class="boton-convertir">Agregar Tarea</button>
+        </div>
+
+        <ul id="listaTareas" class="lista-tareas"></ul>
+
+        <p id="mensajeVacio" class="mensaje-vacio">No tienes tareas pendientes.</p>
+    </div>
+
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>
